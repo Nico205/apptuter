@@ -41,6 +41,9 @@ html {
   padding: 0;
   height: 100%;
   background-color: #f0f3eb;
+  	overflow-y: scroll !important;
+    -webkit-overflow-scrolling: touch;
+	-webkit-transform: translateZ(0);
   
 }
 #postsWrapper{
@@ -49,6 +52,9 @@ html {
 	height:100%;
 	position:relative;
 	overflow:hidden;
+	overflow-y: scroll !important;
+    -webkit-overflow-scrolling: touch;
+	-webkit-transform: translateZ(0);
 }
 .noPadding {
   padding: 0 !important;
