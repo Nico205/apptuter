@@ -1,8 +1,8 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js",
-        "id": "org.apache.cordova.inappbrowser.inappbrowser",
+        "file": "plugins/org.apache.cordova.inappbrowser/www/InAppBrowser.js",
+        "id": "org.apache.cordova.inappbrowser.InAppBrowser",
         "clobbers": [
             "window.open"
         ]
@@ -123,10 +123,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.file/www/fileSystems.js",
-        "id": "org.apache.cordova.file.fileSystems"
-    },
-    {
         "file": "plugins/org.apache.cordova.file/www/requestFileSystem.js",
         "id": "org.apache.cordova.file.requestFileSystem",
         "clobbers": [
@@ -141,24 +137,18 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.file/www/ios/FileSystem.js",
-        "id": "org.apache.cordova.file.iosFileSystem",
+        "file": "plugins/org.apache.cordova.file/www/ios/Entry.js",
+        "id": "org.apache.cordova.file.iosEntry",
         "merges": [
-            "FileSystem"
+            "window.Entry"
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.file/www/fileSystems-roots.js",
-        "id": "org.apache.cordova.file.fileSystems-roots",
-        "runs": true
-    },
-    {
-        "file": "plugins/org.apache.cordova.file/www/fileSystemPaths.js",
-        "id": "org.apache.cordova.file.fileSystemPaths",
+        "file": "plugins/org.apache.cordova.file/www/ios/FileSystem.js",
+        "id": "org.apache.cordova.file.iosFileSystem",
         "merges": [
-            "cordova"
-        ],
-        "runs": true
+            "window.FileSystem"
+        ]
     },
     {
         "file": "plugins/org.apache.cordova.file-transfer/www/FileTransferError.js",
@@ -200,12 +190,12 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "org.apache.cordova.inappbrowser": "0.5.1",
-    "org.apache.cordova.dialogs": "0.2.9",
-    "org.apache.cordova.file": "1.3.0",
-    "org.apache.cordova.file-transfer": "0.4.5",
-    "org.apache.cordova.network-information": "0.2.11",
-    "org.apache.cordova.vibration": "0.3.10"
+    "org.apache.cordova.inappbrowser": "0.3.0",
+    "org.apache.cordova.dialogs": "0.2.6",
+    "org.apache.cordova.file": "1.0.1",
+    "org.apache.cordova.file-transfer": "0.4.2",
+    "org.apache.cordova.network-information": "0.2.7",
+    "org.apache.cordova.vibration": "0.3.7"
 }
 // BOTTOM OF METADATA
 });

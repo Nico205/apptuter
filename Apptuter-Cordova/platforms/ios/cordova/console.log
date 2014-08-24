@@ -1,0 +1,29 @@
+2014-08-23 15:19:13.928 SharkiaPost[75380:90b] Multi-tasking -> Device: YES, App: YES
+2014-08-23 15:19:13.937 SharkiaPost[75380:90b] Unlimited access to network resources
+2014-08-23 15:19:13.941 SharkiaPost[75380:90b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-23 15:19:13.958 SharkiaPost[75380:90b] [CDVTimer][file] 2.182007ms
+2014-08-23 15:19:13.959 SharkiaPost[75380:90b] [CDVTimer][TotalPluginStartup] 2.870023ms
+2014-08-23 15:19:14.773 SharkiaPost[75380:90b] Resetting plugins due to page load.
+2014-08-23 15:19:15.573 SharkiaPost[75380:90b] Finished load of: file:///Users/administrator/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/A5F9AE48-2DC9-48EC-8B7B-FD0CCB69ABE3/SharkiaPost.app/www/index.html
+2014-08-23 15:19:16.273 SharkiaPost[75380:90b] THREAD WARNING: ['Notification'] took '140.621094' ms. Plugin should use a background thread.
+2014-08-23 15:19:17.635 SharkiaPost[75380:90b] THREAD WARNING: ['Notification'] took '553.601807' ms. Plugin should use a background thread.
+2014-08-23 15:35:25.297 Apptuter[75699:90b] Multi-tasking -> Device: YES, App: YES
+2014-08-23 15:35:25.304 Apptuter[75699:90b] Unlimited access to network resources
+2014-08-23 15:35:25.307 Apptuter[75699:90b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-23 15:35:25.323 Apptuter[75699:90b] [CDVTimer][file] 1.672983ms
+2014-08-23 15:35:25.324 Apptuter[75699:90b] [CDVTimer][TotalPluginStartup] 2.265036ms
+2014-08-23 15:35:26.143 Apptuter[75699:90b] Resetting plugins due to page load.
+2014-08-23 15:35:26.940 Apptuter[75699:90b] Finished load of: file:///Users/administrator/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B4DFC4E1-B541-4E7D-A565-6A128B4D3EEB/Apptuter.app/www/index.html
+2014-08-23 15:35:29.354 Apptuter[75699:90b] THREAD WARNING: ['File'] took '89.021240' ms. Plugin should use a background thread.
