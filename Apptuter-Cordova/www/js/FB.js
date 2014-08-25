@@ -444,8 +444,33 @@ Main.prototype.showPagePosts = function () {
         
         //Linking With Facebook App if available & if not linking with the mobile version
         $('#postcontainer' + this.counter + '-' + i).find('.fb').html("<a  name='fb://post/"+this.postArray[i].id+"'><img name='fb://post/"+this.postArray[i].id+"' src='img/Facebook_Logo.png' /></a>").on('tap',function (e) { e.preventDefault(); 
+		
+		var devicePlatform = device.platform;
+		
+		if(devicePlatform == "iOS") {
+		
+		appAvailability.check('fb://',function(isInstalled) {
+		
+			if(isInstalled) {
 
-        appAvailability.check('com.facebook.katana', function(availability) {
+				var postId=e.target.name.substring(e.target.name.indexOf('_') + 1);
+            	var url="https://m.facebook.com/"+_THIS_.pageName+"/posts/"+postId;
+            	window.open(url,"_system","location=yes");
+
+			} else {
+
+				var postId=e.target.name.substring(e.target.name.indexOf('_') + 1);
+            	var url="https://m.facebook.com/"+_THIS_.pageName+"/posts/"+postId;
+            	window.open(url,"_system","location=yes");
+
+			}
+		});
+		
+		}
+		
+		else if(devicePlatform == "Android") {
+		
+		appAvailability.check('com.facebook.katana', function(availability) {
             // availability is either true or false
             if(availability) { 
             	$.mobile.loading( 'show');
@@ -463,6 +488,8 @@ Main.prototype.showPagePosts = function () {
             }
             	
         });
+		
+		}
        
         });
         
